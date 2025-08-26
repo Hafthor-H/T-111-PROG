@@ -1,0 +1,5 @@
+n = int(input())
+h= int(input())
+m = int(input())
+x = int(input())
+y = int(input())
