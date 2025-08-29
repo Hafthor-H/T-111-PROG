@@ -1,8 +1,16 @@
+flag = True
+
 while True:
-    strengur = input("You need something doubled? (Y)es?")
+    if(flag):
+        print("You need something doubled? (Y)es?")
+        flag = False
+    else:    
+         print("You need something else doubled? (Y)es?")
+
+    strengur = input("")
     if(strengur == "Y"):
-        num = float(input("All right, then. Give me a number, and I'll double it for ya: "))
+        print("All right, then. Give me a number, and I'll double it for ya:")
+        num = float(input(""))
         print(num*2)
-        num = 0
     else:
         break
