@@ -1,16 +1,17 @@
 import random
 counter = 0
-rnum = random.randint(1,1000)
+low = 1
+high = 1000
 
-while True:
-    if(counter == 10):
+while counter != 10:
+    guess = (low + high) // 2
+    print(guess, flush=True)
+    kattis = input()
+    if (kattis == "lower"):
+        high = guess - 1
+        counter += 1
+    elif (kattis == "higher"):
+         low = guess + 1
+         counter += 1
+    elif (kattis == "correct"):
         break
-    guess = int(input(""))
-    if(guess == rnum):
-        print("correct")
-    elif(guess < rnum):
-        print("higher")
-        counter += 1
-    elif(guess > rnum):
-        print("lower")
-        counter += 1
