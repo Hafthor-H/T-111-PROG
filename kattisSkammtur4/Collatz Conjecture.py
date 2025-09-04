@@ -9,4 +9,3 @@ while True:
     elif (num % 2) == 0:
         num = num / 2
         print(int(num))
-    
