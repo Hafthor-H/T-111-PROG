@@ -1,3 +1,6 @@
+#Ekki tilbúið
+
+
 email = input()
 
 emailLen = len(email)
