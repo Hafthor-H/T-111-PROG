@@ -1,5 +1,4 @@
-#Ekki tilbúið
-
+#Óklárað
 
 email = input()
 
