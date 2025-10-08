@@ -30,8 +30,6 @@ def isPrime(num):
     numSqrt =  math.sqrt(num)
     counter = 2
     isPrime = True
-    if num == 1:
-        return True
     if (num != 1):
         while counter <= numSqrt:
             if( num % counter == 0):

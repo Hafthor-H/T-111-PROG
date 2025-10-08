@@ -1,0 +1,85 @@
+def list_of_squares(square_list):
+    [i**2 for in square_list]
+    return square_list 
+
+-Stafsetningarvilla
+-Vantar að gera listann að breytu
+-Mögulega var range þarna
+
+
+-Betri útgáfa
+-Listi orðinn að breytu
+def list_of_squares(square_list):
+    new_list = [i**2 for i in square_list]
+    return new_list
+
+
+
+def strings_to_list():
+    string_list = []
+    while True:
+          user = input()
+	  if user.lower() == "q"
+	     break
+	  string_list.append(user)
+    return string_list
+	       
+-Vantar tvípunkt á eftir if
+-Massive indentation errors
+-Notar while True
+
+
+
+
+-Betri útgáfa
+-Notar ekki while True
+def strings_to_list():
+    user_strings = []
+    user = ""
+    while user != "q":
+            user = input()
+            if user == "q":
+               return user_strings
+            user_strings.append(user)
+
+
+
+def sum_digits(string_input):
+    list_input = list(string_input)
+    return sum(list_input)
+
+-Vantar að breyta listanum yfir í ints ---stór villa
+
+
+-Útgáfa sem virkar
+def sum_digits(string_input):
+    list_input = list(string_input)
+    list_input = [int(i) for i in list_input]
+    return sum(list_input)
+
+
+def pattern(num):
+    for i in range(num):
+         for k in range(i):
+              print("*",end="")
+         print()
+
+-Vantar num+1
+-Vantar 1 í range
+
+-Útgáfa sem virkar
+def pattern(num):
+    for i in range(1,num+1):
+         for k in range(i):
+              print("*",end="")
+         print()
+
+
+
+
+
+
+
+
+
+
