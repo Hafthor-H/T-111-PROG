@@ -8,7 +8,7 @@ file_two_text = []
 
 
 
-with open(file_one, "r") as file_one_inn, open(file_two, "r") as file_two_inn: #Bæta við "/src/" á filenames til að þetta virki í kattis
+with open("/src/"+ file_one, "r") as file_one_inn, open(file_two, "r") as file_two_inn: #Bæta við "/src/" á filenames til að þetta virki í kattis
     for line_one in file_one_inn:
         file_one_text.append(line_one)
     for line_two in file_two_inn:
